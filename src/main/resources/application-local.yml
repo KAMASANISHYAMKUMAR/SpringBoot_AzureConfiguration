@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: SpringBoot_Azure_Configuration_App
+
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#  cloud:
+#    azure:
+#      keyvault:
+#        uri: ${KEYVAULT_URI}
+#      storage:
+#        blob:
+#          account-name: ${STORAGE_ACCOUNT_NAME}

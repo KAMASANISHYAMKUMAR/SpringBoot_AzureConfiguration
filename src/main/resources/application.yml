@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: SpringBoot_Azure_Configuration_App
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:local}
+
